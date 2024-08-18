@@ -15,5 +15,5 @@ class MyHandler(SimpleHTTPRequestHandler):
 if __name__ == "__main__":
     logging.basicConfig(filename='server2.log', level=logging.INFO)
     httpd = HTTPServer(('', 8081), MyHandler)
-    print("Server running on port 8081")
+    print("Server 2 running on port 8081")
     httpd.serve_forever()
