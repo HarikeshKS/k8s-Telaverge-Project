@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: server1
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: server1
+  template:
+    metadata:
+      labels:
+        app: server1
+    spec:
+      containers:
+      - name: server1
+        image: server1:v1
+        ports:
+        - containerPort: 8080
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: server1
+spec:
+  selector:
+    app: server1
+  ports:
+  - port: 8080
+    targetPort: 8080
