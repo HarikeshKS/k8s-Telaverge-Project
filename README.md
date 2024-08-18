@@ -1,7 +1,4 @@
-# k8s-Telaverge-Project
-
-```markdown
-# Kubernetes-Based Client-Server System with Auto-Recovery
+# k8s-Telaverge-Project: Kubernetes-Based Client-Server System with Auto-Recovery
 
 ## Project Overview
 
